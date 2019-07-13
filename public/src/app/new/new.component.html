@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="jumbotron">
+    <h1 class="display-4">Create a New Product</h1>
+    <form (submit)="create()">
+        <p>Title: <input type="text" name="product.name" [(ngModel)]="product.name"></p>
+        <p>Price: <input type="text" name="product.price" [(ngModel)]="product.price"></p>
+        <p>Image url: <input type="text" name="product.photo" [(ngModel)]="product.photo"></p>
+        <p id="error" *ngIf="msg_error">{{msg_error}}</p>
+        <input type="submit">
+    </form>
+</div>

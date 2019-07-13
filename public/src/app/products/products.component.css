@@ -1,0 +1,14 @@
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.product{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px black solid;
+    display: inline-block;
+    vertical-align: top;
+}
